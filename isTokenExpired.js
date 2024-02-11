@@ -2,6 +2,19 @@
 const accessToken = "your_access_token_here";
 
 // Function to check if the token has expired
+/*
+    This function takes an access token as input and returns a boolean value indicating whether the token has expired.
+    @param {string} accessToken - the access token (A Valid JWT Token)
+    @returns {boolean} - returns true if the token has expired, false otherwise
+    @example
+    const isExpired = isTokenExpired(accessToken);
+    if (isExpired) {
+        console.log("Token has expired.");
+    } else {
+        console.log("Token is still valid.");
+    }
+
+ */
 const isTokenExpired = (accessToken) => {
   try {
     // Decode the token without verifying the signature
